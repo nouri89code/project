@@ -1,0 +1,263 @@
+/* color: #57d5a9; */
+body{
+        background-color: rgb(21, 83, 168);
+        color:white;
+        font-family: Helvetica;
+        margin-top: 100px;
+        margin-bottom:0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+ 
+ }
+ #logo{
+    position: absolute;
+    top:0px;
+    left:0%;
+    max-width: 6%;     
+}
+
+#titleheader{
+    margin-right: 40%;
+}
+ #progress{
+    position: absolute;
+    top:2%;
+    right: 2%;
+    width: 10%;
+
+} 
+/* #topleft{
+    display: flex;
+    flex-direction: column;
+} */
+.key{
+    display: flex;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #57d5a9;
+    border-radius: 5px;
+    /* background-color:#1F61D9ff; */
+    background-color:rgb(16, 25, 41); 
+}
+
+#Complete{
+    margin-left: 10%;
+   
+}
+
+button{
+    margin:0 10% 0 10%;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    margin: 2%;}
+
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color:  #57d5a9;
+    border-radius: 50%;
+    display: inline-block;
+    }
+    .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    }
+    .st{
+     background-color: rgb(17, 236, 17);
+    }
+    body {
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        height: 100vh;
+    }
+    .progress-container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .progress-bar {
+        background-color: #ccc;
+        height: 30px;
+        position: relative;
+    }
+    .progress {
+        width: 50%; /* Change this value to represent the progress */
+        height: 100%;
+        background-color: #3498db;
+        position: absolute;
+    }
+    .labels {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 10px; */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .progress-container {
+        width: 80%;
+        margin: 50px auto;
+        position: relative;
+    }
+    .progress-bar {
+        background-color: #ccc;
+        height: 30px;
+        position: relative;
+    }
+    .progress-container {
+        width: 80%;
+        margin: 50px auto;
+        position: relative;
+    }
+    .progress-bar {
+        background-color: #ccc;
+        height: 30px;
+        position: relative;
+    }
+    .progress {
+        height: 100%;
+        background-color: #3498db;
+        position: absolute;
+    }
+    .tick-marks {
+        display: flex;
+        flex-direction: column; /* Display labels vertically */
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transform: translateY(-200%); /* Center vertically */
+    }
+    .tick-label {
+        transform: rotate(-90deg); /* Rotate labels 90 degrees */
+        white-space: nowrap; /* Prevent label text from wrapping */
+        text-align: center; 
+        color: #57d5a9;
+    }
+   #todayDateLabel{
+    margin-left: 25%; 
+     margin-top: -12%; 
+
+   }
+   #endDateLabel{
+    margin-left: 580%;
+    margin-top: -20%; 
+
+    
+
+   
+   }
+   #startDateLabel{
+    /* margin-right: 100%; */
+     margin-top: -12%;
+     margin-right: 90%; 
+    /* margin-bottom: 90%; */
+   }
+
+   table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid  #57d5a9;;
+    padding: 8px;
+    text-align: left;
+    color: #57d5a9;
+}
+th {
+    background-color: #181616;
+}
+/* tr:hover {
+    background-color: #f5f5f5;
+    color:#181616
+} */
+select {
+    width: 100%;
+}
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 12rem;
+    /* --fg: #369; */
+    --fg: #57d5a9;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, rgb(36, 88, 179) 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    color: white;
+  }
+
+  #completedProgrss{
+    margin-left: 50%;
+  }
+  /* #progressGraph{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+
+#started{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+  
+ /* #progressGraph{
+    order: 1;
+ }
+ #completedProgrss{
+    order: 2;
+ } */
+ #complete{
+    order: -4;
+    margin-top: 25%;
+ }
+
+    #graph{
+        display: flex;
+    }
+    #progressheader{
+        align-items: center;
+    }
+    
+    
